@@ -76,4 +76,4 @@ PS:
 
 6) Now most GPU require two PCI slots,  so  you need to pay attention to PCIe slot
 
-![1511170524605](/Users/zichun.wan/Downloads/1511170524605.jpg)
+
