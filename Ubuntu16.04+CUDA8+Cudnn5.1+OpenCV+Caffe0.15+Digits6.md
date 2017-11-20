@@ -149,12 +149,8 @@ $ cd build
 $ cmake -DUSE_NCCL=ON -DUSE_CUDNN=ON ..
 $ make -j"$(nproc)"
 $ make install
+$ /home/ubuntu/caffe/build/install/bin/caffe --version
 ```
-
-??????? BUG?
-
-/home/ubuntu/caffe/build/install/bin/caffe --version
-
 # Build Digits6
 
 Prerequisites
