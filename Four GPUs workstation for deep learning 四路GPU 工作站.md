@@ -88,6 +88,6 @@ Note 注意 :
 
 4) According to all system TDP selection Power unit ( GTX 1080 TDP is 180W etc). 根据整个硬件系统的TDP来选择电源(GTX 1080的设计额定功耗只有180W 等等)
 
-5) Please select Founder version GPU, Last time someone bought 4 Asus ROG STRIX-GTX1080-O8G-GAMING, but each of GPU take more than 2 slots… … 请选择公版设计的显卡，上次有个朋友买了4片华硕ROG STRIX-GTX1080-O8G-GAMING，结果这款显卡需要的槽位大于2个... ...
+5) Please select Founder version GPU, Last time someone bought 4 Asus ROG STRIX-GTX1080-O8G-11GBPS, but each of GPU take more than 2 slots… … 请选择公版设计的显卡，上次有个朋友买了4片华硕ROG STRIX-GTX1080-O8G-11GBPS，结果这款显卡需要的槽位大于2个... ...
 
 6) Now most GPU require two PCI slots,  so  you need to pay attention to PCIe slot. 目前大多数显卡都需要占用2个PCI槽位，建议注意PCI插槽的位置，尤其在机箱选择上
