@@ -74,7 +74,7 @@ If you want use four GTX 1080 Ti or better GPU 如果你想使用4块GTX 1080 Ti
 | CPU cooler  | Cooler Master T400i             | 2      |
 | Motherboard | ASRock EP2C612 WS               | 1      |
 | RAM         | Samsung DDR4 2133 RDIMM 8GB     | 4      |
-| GPU card    | GTX 1080 Founder version        | 4      |
+| GPU card    | GTX 1080 Ti Founder version     | 4      |
 | Power       | SUPER FLOWER LEADEX T 1600W     | 1      |
 | Case        | IN WIN 707                      | 1      |
 
