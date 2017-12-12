@@ -5,6 +5,7 @@ This is a guide for 4-GPUs workstation for deep learning or GPU computing, I hop
 这是一篇针对深度学习的4路工作站配置向导，我希望这篇文章能帮助大家组建一台高性价比的计算平台。
 
 This is a link about PCI Express Interface parameters, 这是一篇关于PCIe接口参数的链接: http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/
+
 As I know, When the CPU integrated PCIe controller, the mainstream GPU with PCIe bus are directly connected to the CPU. So in most cases, How many GPUs we can use mainly depends on these four designs：
 
 据我所知，当CPU集成了PCIe控制器之后，主流的GPU都是直连在CPU上工作。所以在大多数情况下，多显卡由下列4点因素决定：
