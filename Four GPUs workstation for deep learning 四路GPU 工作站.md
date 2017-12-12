@@ -36,11 +36,11 @@ In these circumstances, I think Intel® Xeon® Processor E5 v4 Family and Intel�
 
 在这样的情况下，我想至强E5 v4系列的cpu和C612芯片主板会是一个很好的选择。并且拥有ECC的机制的CPU和内存系统可以让主机更长时间的工作。以下是华擎工作站主板EP2C612 WS主板(http://www.asrockrack.com/general/productdetail.asp?Model=EP2C612%20WS#Specifications) 设计图：
 
-(.\image\EP2C612 WS.jpg)
+![EP2C612 WS](.\image\EP2C612 WS.jpg)
 
 以及华擎EPC612D8A主板(http://www.asrockrack.com/general/productdetail.asp?Model=EPC612D8A#Specifications) 设计图：
 
-(.\image\EPC612D8A.jpg)
+![EPC612D8A](.\image\EPC612D8A.jpg)
 
 双路工作站主板完全可以满足4 GPU的x16 PCIe需求，并且单路工作站主板也完美的满足了4 GPU x8 PCIe或者2 GPU x16 PCIe的需求。
 
