@@ -35,7 +35,9 @@ $ sudo crontab -e
 ## Backup configuration instructions / 备份配置说明
 
 All backup configurations are in /etc/gitlab/gitlab.rb.所有的备份配置都在/etc/gitlab/gitlab.rb文件中
+
 The default configuration is gitlab_rails['backup_path'] = "/var/opt/gitlab/backups".默认的配置参数是gitlab_rails['backup_path'] = "/var/opt/gitlab/backups"
+
 You can modify the default backup stored path, than use this command to make changes effective.你可以修改默认的备份路径，并且使用下面的命令使配置生效
 
 ```
