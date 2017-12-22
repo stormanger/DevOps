@@ -122,5 +122,12 @@ $ sudo gitlab-rake gitlab:check SANITIZE=true
 ```
 $ sudo crontable -e
 0 6 * * * find "/var/opt/gitlab/backups/" -maxdepth 1 -type f -name "*.tar" -mtime +30 -exec rm -f {} \;
-```
 
+```
+0 2 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
+0 4 * * * umask 0077; tar -cf /mnt/gitlab-backup/$(date "+etc-gitlab-\%s.tar") -C / etc/gitlab
+0 5 * * * find "/var/opt/gitlab/backups/" -maxdepth 1 -type f -name "*.tar" -mtime +15 -exec rm -f {} \;
+0 6 * * * find "/mnt/gitlab-backup/" -maxdepth 1 -type f -name "*.tar" -mtime +30 -exec rm -f {} \;
+0 7 * * * find "/mnt/FullAccessFolder/Gitlab-Backup/" -maxdepth 1 -type f -name "*.tar" -mtime +60 -exec rm -f {} \;
+0 8 * * * find "/mnt/gitlab-backup/" -maxdepth 1 -type f -name "*.tar" -mtime -1 -exec rsync -avlP {} /mnt/FullAccessFolder/Gitlab-Backup/ \;
+```
