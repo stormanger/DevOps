@@ -4,7 +4,7 @@
 
 结果看到
 
-![grub1](C:\Users\loli\work\Jessun\image\grub1.jpg)
+![grub1](https://github.com/stormanger/DevOps/blob/master/image/grub1.jpg)
 
 那么自然是修复分区表啦，gdisk走起，进入恢复模式r，再使用b，使用backup重建分区表，p打印一看，一切正常，w保存退出，挂载各磁盘，表示读写文件均正常。重启后依然无法引导 囧
 
