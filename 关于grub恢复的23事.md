@@ -10,6 +10,8 @@
 
 继续救援盘发现系统依然只能发现/dev/sda，继续各种折腾2小时无果，协商重装吧，系统引导之后发现所有的分区信息都能识别，除了1M的/dev/sda1，没错，是它是它就是它——grub发生了问题。
 
+![grub1](https://github.com/stormanger/DevOps/blob/master/image/grub2.jpg)
+
 `# mkfs.ext4 /dev/sda1`之后，就需要重建grub啦
 
 重新写一个rhel7的引导U盘，Troubleshooting——Rescue a CentOS Linux system——进入命令：
