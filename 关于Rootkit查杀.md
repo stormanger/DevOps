@@ -76,3 +76,5 @@ cat 这些文件查看，基本可以确定是恶意脚本：
 
 建议root使用强密码，并且根据需求对系统进行安装加固（如更改ssh端口，建立普通用户给与sudo权限并且禁用root使用ssh登陆，配合防火墙使用fail2ban等），有条件尽量先更新补丁，
 
+## links
+https://superuser.com/questions/863997/ddos-virus-infection-as-a-unix-service-on-a-debian-8-vm-webserver
