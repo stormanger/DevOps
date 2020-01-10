@@ -1,0 +1,42 @@
+https://www.systutorials.com/1473/setting-up-git-commit-email-notification/
+https://github.com/zma/usefulscripts/blob/master/script/post-receive
+https://zhuanlan.zhihu.com/p/31167600
+https://stackoverflow.com/questions/5583139/how-can-git-post-receive-hook-get-name-of-repo-it-is-running-on
+https://coderwall.com/p/qjmp1g/git-post-receive-hook-to-save-branches-into-different-folders
+https://www.cnblogs.com/hpcpp/p/7380939.html
+
+Please note that, you just can set hooks in /opt/gitlab/embedded/service/gitlab-shell/
+
+If you want set custom hooks, you need mkdir custom_hooks dir in git-data/<xxxgroup>/<xxx>.git/, than put your script in this dir, and chmod + x script
+
+#!/bin/bash
+
+if [ $(git rev-parse --is-bare-repository) = true ]
+then
+    REPOSITORY_BASENAME=$(basename "$PWD")
+else
+    REPOSITORY_BASENAME=$(basename $(readlink -nf "$PWD"/..))
+fi
+
+while read oldrev newrev ref;do
+    branch=`echo $ref | cut -d/ -f3`
+#    echo $ref
+#    echo $oldrev
+#    echo $newrev
+done
+
+if [[ $branch =~ ".git" ]];then
+    branchname=$(cut -d "." $branch -f 1)
+else
+    branchname=$branch
+fi
+
+#echo "The branchname is : $branchname"
+
+if [ $branch == dev ] || [ $branch == master ];then
+    /usr/bin/echo -e "Dear all,\n\nThis mail is a New Commit Notifications for $REPOSITORY_BASENAME branch $branch.\nURL for commits: http://git.iluvatar.ai/olap/$REPOSITORY_BASENAME/commits/$branchname\n\nBest wishes"| /usr/bin/mail -s "$REPOSITORY_BASENAME/$branch new commit notifications" zcwan@iluvatar.ai
+#else
+#    exit 0
+fi
+
+#exit 0
